@@ -1,0 +1,105 @@
+section,
+grunnlag,
+systematisk,
+alfabetisk{
+	width:auto;
+	margin:0px;
+}
+@page{
+  margin: 18mm 25mm 25mm 25mm;
+}
+
+p{
+	font-family:"Times New Roman";
+}
+
+header,
+.toc,
+.innledning,
+.litteratur{
+	display:none;
+}
+article{
+	margin-left:0px;
+}
+
+h2{
+	font-size:14pt;
+	font-weight:Bold;
+	color:#746842;
+	text-align:left;
+}
+.grunnlag{
+	background-color:#FFFFFF;
+	padding:0px;
+	width:100%;
+	border:#DDDDDD 0px solid;
+}
+
+.grunnlag .conceptFamily{
+	background-color:#FFFFFF;
+	padding:10px 0px;
+	margin:0px;
+	font-size:12pt;
+	border:#DDDDDD 0px solid;
+	border-radius:0px;
+	-moz-border-radius:0px; /* Old Firefox */
+}
+
+.systematisk{
+	background-color:#FFFFFF;
+	padding:0px;
+	width:100%;
+	border:#DDDDDD 0px solid;
+}
+
+.systematisk .conceptFamily{
+	background-color:#FFFFFF;
+	padding:10px 0px 10px 50px;
+	margin:0px;
+	font-size:12pt;
+	border:#DDDDDD 0px solid;
+	border-radius:0px;
+	-moz-border-radius:0px; /* Old Firefox */
+}
+
+.alfabetisk .identifier {
+	margin-right:200px;
+	width:50px;}
+
+section{
+	background-color:#FFFFFF;
+	padding:0px;
+	margin:0px;
+	font-size:12pt;
+	border:#DDDDDD 0px solid;
+	border-radius:0px;
+	-moz-border-radius:0px; /* Old Firefox */
+}
+
+.termer{
+	background-color:#FFFFFF;
+	padding:0px;
+	width:100%;
+	border:#DDDDDD 0px solid;
+}
+
+.term{
+	background-color:#FFFFFF;
+	padding:10px 0px;
+	margin:0px;
+	font-size:12pt;
+	border:#DDDDDD 0px solid;
+	border-radius:0px;
+	-moz-border-radius:0px; /* Old Firefox */
+}
+
+/*Page breaks*/
+section{
+	page-break-after:always;
+}
+.alfabetisk .term,
+.grunnlag .conceptFamily,
+.systematisk .conceptFamily {
+	page-break-inside:avoid;
+}
